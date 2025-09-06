@@ -285,6 +285,15 @@ public entry fun let_pet_sleep(pet: &mut Pet, clock: &Clock) {
     emit_action(pet, b"started_sleeping");
 }
 
+public entry fun cheat(pet: &mut Pet) {
+    let gb = get_game_balance();
+    pet.stats.energy = gb.max_stat;
+    pet.stats.happiness = gb.max_stat;
+    pet.stats.hunger = gb.max_stat;
+    pet.game_data.coins = 999999;
+    pet.game_data.experience = 999999;
+}
+
 public entry fun wake_up_pet(pet: &mut Pet, clock: &Clock) {
     assert!(is_sleeping(pet), E_PET_IS_ASLEEP);
     
