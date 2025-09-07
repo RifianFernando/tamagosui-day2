@@ -292,6 +292,8 @@ public entry fun cheat(pet: &mut Pet) {
     pet.stats.hunger = gb.max_stat;
     pet.game_data.coins = 999999;
     pet.game_data.experience = 999999;
+
+    emit_action(pet, b"cheated");
 }
 
 public entry fun wake_up_pet(pet: &mut Pet, clock: &Clock) {
