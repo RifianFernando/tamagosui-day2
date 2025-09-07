@@ -1,6 +1,6 @@
 # Tamagosui Sui Contract
 
-A simple Tamagotchi-like game built on the Sui blockchain. Adopt your own digital pet, care for it, and watch it evolve!
+A simple Tamagotchi-like game built on the Sui blockchain, created during the Sui Community Bootcamp Workshop Batch 2. Adopt your own digital pet, care for it, and watch it evolve!
 
 ## Features
 
